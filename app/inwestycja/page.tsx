@@ -9,7 +9,7 @@ export default function Inwestycja() {
     <>
 
 
-<section style={{position: 'relative'}}><div className="ph" style={{borderRadius: '0', aspectRatio: '21/9', minHeight: '420px'}}><img src={`${BASE}/img/i01.webp`} alt="Panorama kwartału z lotu ptaka, cztery budynki wokół zielonego dziedzińca" decoding="async" /></div>
+<section className="bleed" style={{position: 'relative'}}><div className="ph" style={{borderRadius: '0'}}><img src={`${BASE}/img/i01.webp`} alt="Panorama kwartału z lotu ptaka, cztery budynki wokół zielonego dziedzińca" decoding="async" /></div>
 <div className="wrap" style={{position: 'absolute', inset: 'auto 0 48px 0', color: 'var(--paper)'}}><p className="k" style={{color: 'var(--paper)'}}>Inwestycja</p><h1 style={{textShadow: '0 2px 30px rgba(0,0,0,.35)'}}>Fabryka, w której<br />da się mieszkać.</h1></div></section>
 <section className="sec"><div className="wrap">
 <div className="head rv"><div><p className="k">Historia miejsca</p><h2>Ponad sto lat w trzech datach.</h2></div></div>

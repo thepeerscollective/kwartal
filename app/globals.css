@@ -323,3 +323,24 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 }
 .skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:999px;z-index:100}
 .skip:focus{left:16px}
+
+/* fit: no dead space under the menu, hero = one screen */
+main>section:first-child,main>div:first-child>section:first-child{padding-top:clamp(24px,4vh,48px)}
+.sec{padding:clamp(48px,9vh,112px) 0}
+.hero{min-height:calc(100svh - 85px);display:flex;align-items:center;padding:clamp(16px,3vh,32px) 0!important}
+.hero>.wrap{width:100%;align-items:center!important}
+.hero h1{margin:clamp(12px,2.4vh,28px) 0 clamp(14px,2.6vh,30px);font-size:clamp(40px,min(5.4vw,10vh),84px)}
+.hero .lead{margin-bottom:clamp(18px,3.4vh,36px)}
+.hero .win{aspect-ratio:1/1}
+.hero .facade{max-width:min(600px,calc((100svh - 150px) * .98))}
+.person .ph{aspect-ratio:auto!important;height:min(50vh,460px)}
+@media (max-width:760px){.hero{min-height:0}}
+main>section.bleed:first-child{padding:0}
+.bleed .ph{height:calc(100svh - 85px);min-height:420px;max-height:900px}
+
+/* motion: blinds, not fades - content is unrolled top to bottom */
+.rv,.rv.in{opacity:1;transform:none;transition:none}
+.rv:not(.in){clip-path:inset(0 0 100% 0)}
+.rv.in{animation:blind 1s cubic-bezier(.75,0,.2,1) backwards}
+@keyframes blind{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion:reduce){.rv:not(.in){clip-path:none}.rv.in{animation:none}}
