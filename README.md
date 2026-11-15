@@ -2,7 +2,7 @@
 
 Serwis dewelopera: 124 mieszkania w dawnej fabryce na Zabłociu. Koncept: **wybierz okno, nie metraż**. Najeżdżasz na okno elewacji i widzisz mieszkanie, które się za nim kryje.
 
-Live: https://thepeerscollective.github.io/kwartal/
+Live: https://thepeerscollective.com/kwartal/
 
 - Next.js 15, static export, GitHub Pages (`.github/workflows/pages.yml`)
 - `app/` strony, `components/` nagłówek, stopka, warstwa interakcji

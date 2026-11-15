@@ -6,7 +6,7 @@ import { Footer, Header } from '@/components/chrome';
 import { BASE } from '@/lib/base';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://thepeerscollective.github.io'),
+  metadataBase: new URL('https://thepeerscollective.com'),
   title: { default: 'Kwartał Zabłocie · Wybierz okno, nie metraż', template: '%s · Kwartał Zabłocie' },
   description: '124 mieszkania w dawnej fabryce na Zabłociu w Krakowie. Najedź na okno elewacji i zobacz mieszkanie, które się za nim kryje.',
   icons: { icon: `${BASE}/favicon.svg` },
