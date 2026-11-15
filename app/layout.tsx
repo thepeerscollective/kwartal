@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import '@fontsource-variable/bricolage-grotesque/opsz.css';
 import '@fontsource/ibm-plex-mono/500.css';
 import './globals.css';
+import { LANG_BOOT } from '@/components/Lang';
 import { Footer, Header } from '@/components/chrome';
 import { BASE } from '@/lib/base';
 
@@ -17,6 +18,7 @@ export const viewport: Viewport = { themeColor: '#F2EFE9', width: 'device-width'
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pl">
+      <head><script dangerouslySetInnerHTML={{ __html: LANG_BOOT }} /></head>
       <body>
         <a className="skip" href="#main">Przejdź do treści</a>
         <Header />

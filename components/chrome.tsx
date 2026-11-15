@@ -1,4 +1,5 @@
 'use client';
+import Lang from '@/components/Lang';
 import { usePathname } from 'next/navigation';
 import { BASE } from '@/lib/base';
 
@@ -25,6 +26,7 @@ export function Header() {
             ))}
           </ul>
         </nav>
+        <Lang />
         <a className="btn btn-i" href={`${BASE}/kontakt/`}>Umów spotkanie</a>
         <button className="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
       </div>
