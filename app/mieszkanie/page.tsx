@@ -11,9 +11,9 @@ export default function Apartment() {
 
 <section className="sec" style={{paddingTop: '40px'}}><div className="wrap">
 <p className="crumb" data-f="crumb">Mieszkania / Budynek B / 4.04</p>
-<div className="apt" style={{marginTop: '28px'}}>
+<div className="apt" style={{marginTop: 'clamp(10px,3.11vh,28px)'}}>
 <div>
-<p className="k"><span data-f="id">B · 4.04</span></p><h1 style={{margin: '14px 0 12px'}} data-f="title">3 pokoje, 64,2 m²</h1><p className="lead" data-f="sub" style={{maxWidth: 'none', marginBottom: '32px'}}></p>
+<p className="k"><span data-f="id">B · 4.04</span></p><h1 style={{margin: '14px 0 12px'}} data-f="title">3 pokoje, 64,2 m²</h1><p className="lead" data-f="sub" style={{maxWidth: 'none', marginBottom: 'clamp(10px,3.56vh,32px)'}}></p>
 <div className="tabs" role="tablist"><button role="tab" aria-selected="true" aria-controls="t-2d">Rzut 2D</button><button role="tab" aria-selected="false" aria-controls="t-viz">Wizualizacja</button><button role="tab" aria-selected="false" aria-controls="t-win">Widok z okna</button></div>
 <div id="t-2d" role="tabpanel" className="plan"><div id="plan"></div></div>
 <div id="t-viz" role="tabpanel" hidden><div className="ph " style={{aspectRatio: '3/2'}}><img src={`${BASE}/img/d02.webp`} alt="Wizualizacja salonu z aneksem, okno od podłogi, dąb i lastryko" decoding="async" /></div></div>
@@ -31,7 +31,7 @@ export default function Apartment() {
 <section className="sec dark" id="slonce"><div className="wrap sun">
 <div className="rv"><p className="k">Słońce w mieszkaniu <span data-f="sunid"></span></p><h2>Zobacz, gdzie<br /><span className="light">pada słońce.</span></h2>
 <p className="lead" style={{margin: '24px 0 8px'}}>Każde mieszkanie ma policzoną wędrówkę słońca: orientację okien, wysokość budynku naprzeciwko i lipy na podwórzu. Przesuń godzinę, zmień miesiąc i zobacz, gdzie położysz rano kawę.</p>
-<div className="sun-stats" style={{marginTop: '28px'}}><div><b id="s-salon">6 h 20 min</b><span className="mono" id="s-salon-l" style={{color: '#8D877C'}}>słońca w salonie</span></div><div><b id="s-dec">2 h 10 min</b><span className="mono" style={{color: '#8D877C'}}>w salonie w najkrótszy dzień roku</span></div><div><b id="s-bed">7:40–10:10</b><span className="mono" style={{color: '#8D877C'}}>sypialnia, poranne słońce</span></div></div></div>
+<div className="sun-stats" style={{marginTop: 'clamp(10px,3.11vh,28px)'}}><div><b id="s-salon">6 h 20 min</b><span className="mono" id="s-salon-l" style={{color: '#8D877C'}}>słońca w salonie</span></div><div><b id="s-dec">2 h 10 min</b><span className="mono" style={{color: '#8D877C'}}>w salonie w najkrótszy dzień roku</span></div><div><b id="s-bed">7:40–10:10</b><span className="mono" style={{color: '#8D877C'}}>sypialnia, poranne słońce</span></div></div></div>
 <div className="rv"><div className="sun-stage">
 <svg id="sun-svg" viewBox="-70 -70 784 620" role="img" aria-label="Rzut mieszkania z plamą słońca na podłodze">
 <defs><clipPath id="clip-salon"><path d="M0 180 H180 V100 H180 V0 H420 V480 H0 Z" /></clipPath><clipPath id="clip-bed"><rect x="420" y="0" width="224" height="300" /></clipPath></defs>
@@ -44,7 +44,7 @@ export default function Apartment() {
 <text x="40" y="515" fontFamily="IBM Plex Mono" fontSize="12" fill="#D9B99F" letterSpacing="1">BALKON ↓ POŁUDNIE</text>
 <circle id="sun-dot" r="16" fill="#E8B07A" />
 </svg>
-<div style={{marginTop: '28px'}}><span className="mono" style={{color: '#8D877C'}}>Godzina <output id="v-hour" style={{color: 'var(--paper)'}}>8:00</output></span>
+<div style={{marginTop: 'clamp(10px,3.11vh,28px)'}}><span className="mono" style={{color: '#8D877C'}}>Godzina <output id="v-hour" style={{color: 'var(--paper)'}}>8:00</output></span>
 <input type="range" id="sun-hour" min="5" max="21" step="0.25" defaultValue="8" style={{'--track': 'var(--terra-l)'} as React.CSSProperties} aria-label="Godzina" />
 <div className="hours"><span>5</span><span>9</span><span>13</span><span>17</span><span>21</span></div></div>
 <div style={{marginTop: '18px'}}><span className="mono" style={{color: '#8D877C', display: 'block', marginBottom: '10px'}}>Miesiąc (21. dzień)</span><div className="months"><button aria-pressed="false">I</button><button aria-pressed="false">II</button><button aria-pressed="true">III</button><button aria-pressed="false">IV</button><button aria-pressed="false">V</button><button aria-pressed="false">VI</button><button aria-pressed="false">VII</button><button aria-pressed="false">VIII</button><button aria-pressed="false">IX</button><button aria-pressed="false">X</button><button aria-pressed="false">XI</button><button aria-pressed="false">XII</button></div></div>

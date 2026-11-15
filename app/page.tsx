@@ -21,7 +21,7 @@ export default function HomePage() {
 <div id="hero-facade" style={{position: 'relative'}}><div className="pop" id="hero-pop" hidden></div></div>
 </div></section>
 
-<section className="dark" style={{padding: '64px 0'}}><div className="wrap stats">
+<section className="dark" style={{padding: 'clamp(10px,7.11vh,64px) 0'}}><div className="wrap stats">
 <div className="rv"><b>124</b><span>mieszkania, 1–5 pokoi</span></div>
 <div className="rv"><b>38–112 m²</b><span>od kawalerki po loft z tarasem</span></div>
 <div className="rv"><b>7 min</b><span>pieszo do bulwarów Wisły</span></div>
@@ -65,7 +65,7 @@ export default function HomePage() {
 <div className="rv"><p className="k">Postęp budowy</p><h2>Budynek B: 62% gotowe.</h2>
 <div className="bar" style={{margin: '28px 0 12px'}}><i data-w="62%"></i></div>
 <ul className="steps"><li className="done">Fundamenty<span>03.2026</span></li><li className="done">Stan surowy<span>09.2026</span></li><li>Okna i dach<span>12.2026</span></li><li>Wykończenia<span>06.2027</span></li><li>Oddanie<span>IV kw. 2027</span></li></ul>
-<a className="btn btn-l" style={{marginTop: '28px'}} href={`${BASE}/postep-budowy/`}>Zdjęcia z budowy co miesiąc →</a></div>
+<a className="btn btn-l" style={{marginTop: 'clamp(10px,3.11vh,28px)'}} href={`${BASE}/postep-budowy/`}>Zdjęcia z budowy co miesiąc →</a></div>
 <div className="rv"><div className="ph " style={{aspectRatio: '4/5'}}><img src={`${BASE}/img/h05.webp`} alt="Budowa budynku B w listopadzie, dźwig i stara cegła" loading="lazy" decoding="async" /></div><p className="cap">Budynek B, listopad 2026</p></div>
 </div></section>
 
@@ -75,7 +75,7 @@ export default function HomePage() {
 </div></section>
 
 <section className="sec terra"><div className="wrap g2">
-<div className="rv"><h2 style={{fontSize: 'clamp(44px,5.6vw,80px)'}}>Przyjdź zobaczyć<br />swoje okno.</h2><p className="lead" style={{color: '#F4E2D6', marginTop: '28px'}}>W biurze sprzedaży pokażemy makietę kwartału i próbki materiałów. Kawa na nas.</p></div>
+<div className="rv"><h2 style={{fontSize: 'clamp(44px,5.6vw,80px)'}}>Przyjdź zobaczyć<br />swoje okno.</h2><p className="lead" style={{color: '#F4E2D6', marginTop: 'clamp(10px,3.11vh,28px)'}}>W biurze sprzedaży pokażemy makietę kwartału i próbki materiałów. Kawa na nas.</p></div>
 <form className="form rv" aria-label="Umów spotkanie">
 <div className="field"><label htmlFor="n">Imię i nazwisko</label><input id="n" name="name" autoComplete="name" required /></div>
 <div className="field"><label htmlFor="t">Telefon</label><input id="t" name="tel" type="tel" autoComplete="tel" required /></div>

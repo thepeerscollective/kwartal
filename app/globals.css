@@ -221,7 +221,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .tabs{display:inline-flex;gap:4px;background:var(--sand);border-radius:999px;padding:4px;margin-bottom:20px}
 .tabs button{padding:9px 18px;border-radius:999px;font-weight:500;font-size:14px}
 .tabs button[aria-selected=true]{background:var(--ink);color:var(--paper)}
-.side{position:sticky;top:110px;display:grid;gap:20px}
+.side{position:sticky;top:92px;display:grid;gap:20px}
 .side .price{font-size:clamp(40px,3.6vw,56px);font-weight:500;letter-spacing:-.03em;line-height:1}
 .spec{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
 .spec div{padding:14px 0;border-bottom:1px solid var(--line)}
@@ -234,7 +234,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .sun{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,72px)}
 .sun-stage{background:#26261F;border-radius:8px;padding:clamp(20px,3vw,48px)}
 .sun-stage svg{width:100%;height:auto;display:block}
-.sun-stats div{border-top:1px solid #3A3A35;padding:20px 0}
+.sun-stats div{border-top:1px solid #3A3A35;padding:clamp(10px,2.22vh,20px) 0}
 .sun-stats b{display:block;font-weight:500;font-size:clamp(34px,3vw,44px);letter-spacing:-.03em;line-height:1.05}
 .months{display:grid;grid-template-columns:repeat(12,1fr);gap:6px}
 .months button{font-family:var(--m);font-size:12px;border:1px solid #3A3A35;border-radius:999px;padding:8px 0;color:var(--paper)}
@@ -251,7 +251,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .poi:hover circle.dot{r:11}
 .mapcard{position:absolute;right:24px;top:24px;width:min(340px,calc(100% - 48px));background:var(--ink);color:var(--paper);border-radius:8px;padding:22px}
 .mapcard b{display:block;font-weight:500;font-size:24px;margin:6px 0}
-.day li{list-style:none;display:grid;grid-template-columns:90px 1fr auto;gap:24px;align-items:baseline;border-top:1px solid #3A3A35;padding:22px 0}
+.day li{list-style:none;display:grid;grid-template-columns:90px 1fr auto;gap:24px;align-items:baseline;border-top:1px solid #3A3A35;padding:clamp(10px,2.44vh,22px) 0}
 .day time{font-family:var(--m);color:var(--terra-l)}
 .day b{font-weight:500;font-size:22px;display:block}
 .day span{color:#BDB7AD;font-size:15px}
@@ -263,7 +263,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .live .tag::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--paper);animation:blink 1.4s infinite}
 @keyframes blink{50%{opacity:.2}}
 .live .time{position:absolute;right:20px;bottom:20px;font-family:var(--m);font-size:13px;color:var(--paper);background:rgba(28,28,26,.6);padding:7px 12px;border-radius:4px}
-.month{display:grid;grid-template-columns:260px 1fr 1fr;gap:24px;padding:40px 0;border-top:1px solid var(--line)}
+.month{display:grid;grid-template-columns:260px 1fr 1fr;gap:24px;padding:clamp(10px,4.44vh,40px) 0;border-top:1px solid var(--line)}
 .month h3{font-size:28px}
 
 /* calculator */
@@ -280,7 +280,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 .payline div{position:relative;padding-top:36px;padding-right:20px}
 .payline div::before{content:"";position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;background:var(--paper);border:2px solid var(--terra)}
 .payline div.pay::before{background:var(--terra)}
-.faq details{border-top:1px solid var(--line);padding:22px 0}
+.faq details{border-top:1px solid var(--line);padding:clamp(10px,2.44vh,22px) 0}
 .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;font-weight:500;font-size:20px}
 .faq summary::after{content:"+";color:var(--terra);font-size:26px;line-height:1;transition:transform .25s}
 .faq details[open] summary::after{transform:rotate(45deg)}
@@ -295,7 +295,7 @@ input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;bac
 @media (max-width:1100px){
   .nav ul{display:none}
   .burger{display:block}
-  .nav.open ul{display:flex;flex-direction:column;position:absolute;top:84px;left:0;right:0;background:var(--paper);padding:20px var(--pad) 32px;gap:18px;border-bottom:1px solid var(--line)}
+  .nav.open ul{display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;background:var(--paper);padding:20px var(--pad) 32px;gap:18px;border-bottom:1px solid var(--line)}
   .nav.open ul a{font-size:22px}
   .nav .wrap>.btn{display:none}
   .g4,.stats{grid-template-columns:1fr 1fr}
@@ -344,3 +344,37 @@ main>section.bleed:first-child{padding:0}
 .rv.in{animation:blind 1s cubic-bezier(.75,0,.2,1) backwards}
 @keyframes blind{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
 @media (prefers-reduced-motion:reduce){.rv:not(.in){clip-path:none}.rv.in{animation:none}}
+
+/* fit kit: every section sized to the viewport height */
+:root{--navH:85px;--avail:calc(100svh - var(--navH))}
+.sec{padding:clamp(32px,6.5vh,88px) 0}
+h2,.h2{font-size:clamp(28px,min(3.8vw,7.4vh),58px)}
+.head{margin-bottom:clamp(18px,3.6vh,48px)}
+.sec .ph{max-height:calc(var(--avail) - 2*clamp(32px,6.5vh,88px))}
+.sec .head~* .ph,.sec h2~* .ph{max-height:calc(var(--avail) - 2*clamp(32px,6.5vh,88px) - clamp(110px,22vh,190px))}
+.sec .ph img{height:100%}
+@media (max-height:820px) and (min-width:761px){
+  body{font-size:16px}
+  .lead{font-size:16px}
+}
+.sec h2~.ph,.sec h2~.rv>.ph,.sec .head~.ph,.sec .head~.rv>.ph,.sec .k~.ph{max-height:calc(var(--avail) - 2*clamp(32px,6.5vh,88px) - clamp(110px,22vh,190px))}
+.sec .ph{width:100%}
+.nav .wrap{height:68px}
+:root{--navH:68px}
+.hero{min-height:calc(100svh - 68px)}
+.bleed .ph{height:calc(100svh - 68px)}
+.hero .facade{max-width:min(600px,calc((100svh - 130px) * .98))}
+@media (max-height:820px) and (min-width:761px){.sec{padding:clamp(28px,5.4vh,88px) 0}}
+.sec .wrap:not(.g2)>*+* .ph,.sec .wrap:not(.g2)>*+*>.ph{max-height:calc(var(--avail) - 2*clamp(28px,5.4vh,88px) - clamp(100px,20vh,180px))}
+.bcard{padding:clamp(14px,2.6vh,24px);gap:clamp(8px,1.6vh,14px)}
+.bcard .mini{padding:10px;gap:4px}
+.bcard .mini i{aspect-ratio:1.4}
+.bcard .t b{font-size:clamp(34px,6vh,52px)}
+.g3>.rv>.ph{aspect-ratio:auto!important;height:clamp(160px,34vh,460px)}
+.mosaic{--mh:clamp(220px,calc(var(--avail) - 210px),560px)}
+.mosaic .ph{aspect-ratio:auto!important;max-height:none!important}
+.mosaic>.rv>.ph{height:var(--mh)}
+.mosaic .g2{grid-template-columns:1fr 1fr;gap:16px!important}
+.mosaic .g2>.ph{height:calc((var(--mh) - 16px)/2)}
+.mosaic .g2>.ph:nth-child(3){grid-column:1/-1}
+.map svg,.nb-map svg,.sec svg.map{max-height:calc(var(--avail) - 150px);width:auto;max-width:100%;margin:0 auto;display:block}

@@ -10,7 +10,7 @@ export default function Listing() {
 
 
 <section className="listing-head"><div className="wrap">
-<div className="head" style={{marginBottom: '28px'}}><div><p className="k">Mieszkania · <span id="count2">81</span> pasujących, 81 wolnych z 124</p><h1>Znajdź swoje okno.</h1></div>
+<div className="head" style={{marginBottom: 'clamp(10px,3.11vh,28px)'}}><div><p className="k">Mieszkania · <span id="count2">81</span> pasujących, 81 wolnych z 124</p><h1>Znajdź swoje okno.</h1></div>
 <div className="views" role="group" aria-label="Widok"><button aria-pressed="true" data-view="facade">Elewacja</button><button aria-pressed="false" data-view="list">Lista</button></div></div>
 <form className="filters" id="filters">
 <div><span className="mono">Pokoje</span><div className="chips" data-f="rooms" data-toggle="many"><button type="button" className="chip" aria-pressed="false" data-v="1">1</button><button type="button" className="chip" aria-pressed="false" data-v="2">2</button><button type="button" className="chip" aria-pressed="false" data-v="3">3</button><button type="button" className="chip" aria-pressed="false" data-v="4">4</button><button type="button" className="chip" aria-pressed="false" data-v="5">5+</button></div></div>
@@ -29,7 +29,7 @@ export default function Listing() {
 <div className="legend"><span><i className="st-free"></i>wolne</span><span><i className="st-res"></i>rezerwacja</span><span><i className="st-sold"></i>sprzedane</span></div>
 </div></section>
 <section id="view-list" style={{padding: '24px 0 96px'}}><div className="wrap">
-<div className="head" style={{marginBottom: '28px'}}><h2 className="h3">Lista mieszkań</h2><label className="mono">Sortuj <select id="sort" style={{marginLeft: '8px', border: '1.5px solid var(--line)', borderRadius: '999px', padding: '8px 14px', background: 'var(--white)'}}><option value="rec">polecane</option><option value="pa">cena rosnąco</option><option value="pd">cena malejąco</option><option value="aa">metraż malejąco</option></select></label></div>
+<div className="head" style={{marginBottom: 'clamp(10px,3.11vh,28px)'}}><h2 className="h3">Lista mieszkań</h2><label className="mono">Sortuj <select id="sort" style={{marginLeft: '8px', border: '1.5px solid var(--line)', borderRadius: '999px', padding: '8px 14px', background: 'var(--white)'}}><option value="rec">polecane</option><option value="pa">cena rosnąco</option><option value="pd">cena malejąco</option><option value="aa">metraż malejąco</option></select></label></div>
 <div className="cards" id="cards"></div>
 </div></section>
 <section className="sec sand"><div className="wrap g2">

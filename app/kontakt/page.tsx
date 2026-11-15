@@ -11,7 +11,7 @@ export default function Kontakt() {
 
 <section className="sec"><div className="wrap g2" style={{alignItems: 'start'}}>
 <div className="rv in"><p className="k">Biuro sprzedaży</p><h1>Przyjdź zobaczyć<br /><span className="light">swoje okno.</span></h1>
-<dl className="spec" style={{marginTop: '48px', maxWidth: '520px'}}><div><dt>Adres</dt><dd>ul. Lipowa 4, Kraków</dd></div><div><dt>Parking</dt><dd>od dziedzińca, dla klientów</dd></div><div><dt>Poniedziałek–piątek</dt><dd>9:00–18:00</dd></div><div><dt>Sobota</dt><dd>10:00–14:00</dd></div><div><dt>Telefon</dt><dd><a href="tel:+48120000000">+48 12 000 00 00</a></dd></div><div><dt>E-mail</dt><dd><a href="mailto:sprzedaz@kwartalzablocie.pl">sprzedaz@ kwartalzablocie.pl</a></dd></div></dl></div>
+<dl className="spec" style={{marginTop: 'clamp(10px,5.33vh,48px)', maxWidth: '520px'}}><div><dt>Adres</dt><dd>ul. Lipowa 4, Kraków</dd></div><div><dt>Parking</dt><dd>od dziedzińca, dla klientów</dd></div><div><dt>Poniedziałek–piątek</dt><dd>9:00–18:00</dd></div><div><dt>Sobota</dt><dd>10:00–14:00</dd></div><div><dt>Telefon</dt><dd><a href="tel:+48120000000">+48 12 000 00 00</a></dd></div><div><dt>E-mail</dt><dd><a href="mailto:sprzedaz@kwartalzablocie.pl">sprzedaz@ kwartalzablocie.pl</a></dd></div></dl></div>
 <form className="form rv in"><p className="k">Umów spotkanie</p>
 <div className="field"><label htmlFor="kn">Imię i nazwisko</label><input id="kn" required autoComplete="name" /></div>
 <div className="field"><label htmlFor="kt">Telefon</label><input id="kt" type="tel" required autoComplete="tel" /></div>
