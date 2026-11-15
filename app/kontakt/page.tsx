@@ -16,7 +16,7 @@ export default function Kontakt() {
 <div className="field"><label htmlFor="kn">Imię i nazwisko</label><input id="kn" required autoComplete="name" /></div>
 <div className="field"><label htmlFor="kt">Telefon</label><input id="kt" type="tel" required autoComplete="tel" /></div>
 <div className="field"><label htmlFor="ke">E-mail</label><input id="ke" type="email" autoComplete="email" /></div>
-<div className="field"><span style={{fontSize: '14px', fontWeight: '500'}}>Jak wolisz?</span><div className="chips" data-toggle="one"><button type="button" className="chip" aria-pressed="true">W biurze</button><button type="button" className="chip" aria-pressed="false">Wideo</button><button type="button" className="chip" aria-pressed="false">Na budowie</button></div></div>
+<div className="field"><span style={{fontSize: '14px', fontWeight: '500'}}>Jak wolisz?</span><div className="chips" data-toggle="one"><button type="button" className="chip" aria-pressed="false">W biurze</button><button type="button" className="chip" aria-pressed="false">Wideo</button><button type="button" className="chip" aria-pressed="false">Na budowie</button></div></div>
 <button className="btn btn-t" type="submit">Wyślij</button><small>Oddzwonimy w ciągu jednego dnia roboczego.</small><p className="ok">Dziękujemy. Oddzwonimy jutro do 12:00.</p></form>
 </div></section>
 <section className="sec sand"><div className="wrap"><div className="head rv"><div><p className="k">Zespół sprzedaży</p><h2>Z kim się spotkasz.</h2></div></div>

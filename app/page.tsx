@@ -13,12 +13,17 @@ export default function HomePage() {
 <div className="rv in">
 <p className="crumb">Kraków · Zabłocie · 4 budynki · 124 mieszkania</p>
 <h1>Wybierz okno,<br /><span className="light">nie metraż.</span></h1>
-<p className="lead">Najedź na dowolne okno elewacji, a zobaczysz mieszkanie, które się za nim kryje: rzut, metraż, stronę świata i cenę. Bez formularzy i czekania na ofertę mailem.</p>
+<p className="lead">Każdy z czterech budynków patrzy gdzie indziej: na dziedziniec, na Wisłę, na Wawel, na aleję. Wybierz widok, a pokażemy mieszkania, które go mają.</p>
 <div className="row"><a className="btn btn-t" href={`${BASE}/mieszkania/`}>Przeglądaj mieszkania</a><a className="btn btn-l" href="#">Pobierz katalog PDF</a></div>
-<div className="legend"><span><i className="st-free"></i>wolne</span><span><i className="st-res"></i>rezerwacja</span><span><i className="st-sold"></i>sprzedane</span></div>
-<p className="mono" style={{marginTop: '14px'}}>Stan na <span data-today>14.11.2026</span> · aktualizowany codziennie</p>
+<p className="mono" style={{marginTop: '18px'}}>Stan na <span data-today>14.11.2026</span> · aktualizowany codziennie</p>
 </div>
-<div id="hero-facade" style={{position: 'relative'}}><div className="pop" id="hero-pop" hidden></div></div>
+<div className="view" id="hero-view">
+<figure className="vph"><img data-v="0" className="on" src={`${BASE}/img/d02.webp`} alt="Salon mieszkania w budynku B: duże okna, drewniana podłoga, kanapa" /><img data-v="B" src={`${BASE}/img/d01.webp`} alt="Widok z okna na zielony dziedziniec" loading="lazy" /><img data-v="C" src={`${BASE}/img/o03.webp`} alt="Widok na Wisłę i bulwary o poranku" loading="lazy" /><img data-v="A" src={`${BASE}/img/h04.webp`} alt="Taras z widokiem na Wawel" loading="lazy" /><img data-v="D" src={`${BASE}/img/h02.webp`} alt="Okno od podłogi do sufitu z widokiem na aleję" loading="lazy" />
+<figcaption className="vcap">Salon, mieszkanie B·4.04 · zdjęcie z mieszkania pokazowego</figcaption>
+<div className="vcard" hidden></div></figure>
+<div className="vtabs" role="group" aria-label="Wybierz widok z okna"><span className="mono">Widok z okna:</span>
+<button data-b="B" aria-pressed="false">Dziedziniec</button><button data-b="C" aria-pressed="false">Wisła</button><button data-b="A" aria-pressed="false">Wawel</button><button data-b="D" aria-pressed="false">Aleja</button></div>
+</div>
 </div></section>
 
 <section className="dark" style={{padding: 'clamp(10px,7.11vh,64px) 0'}}><div className="wrap stats">

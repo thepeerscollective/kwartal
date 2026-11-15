@@ -378,3 +378,24 @@ h2,.h2{font-size:clamp(28px,min(3.8vw,7.4vh),58px)}
 .mosaic .g2>.ph{height:calc((var(--mh) - 16px)/2)}
 .mosaic .g2>.ph:nth-child(3){grid-column:1/-1}
 .map svg,.nb-map svg,.sec svg.map{max-height:calc(var(--avail) - 150px);width:auto;max-width:100%;margin:0 auto;display:block}
+/* hero v2: real rooms, pick the view */
+.hero .g2{grid-template-columns:.8fr 1.2fr}
+.view{display:flex;flex-direction:column;gap:12px}
+.vph{position:relative;margin:0;height:calc(100svh - 85px - 2*clamp(16px,3vh,32px) - 56px);min-height:300px;overflow:hidden;border-radius:4px;background:#E9E4DA}
+.vph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s ease,transform 6s ease;transform:scale(1.04)}
+.vph img.on{opacity:1;transform:none}
+.vcap{position:absolute;left:14px;bottom:12px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.vcard{position:absolute;left:16px;bottom:16px;width:min(300px,calc(100% - 32px));background:#FAF8F3;padding:16px 18px;border-radius:4px;box-shadow:0 20px 40px -20px rgba(0,0,0,.45);animation:vin .35s ease}
+.vcard h4{font-size:18px;margin:4px 0 10px}
+.vcard dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px;margin:0 0 12px}
+.vcard dd{margin:0;text-align:right;font-weight:600}
+.vcard dt{color:var(--grey)}
+.vcard .btn{width:100%;justify-content:center}
+@keyframes vin{from{opacity:0;transform:translateY(8px)}}
+.vtabs{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.vtabs .mono{margin-right:4px}
+.vtabs button{font:inherit;font-size:14px;padding:9px 16px;border-radius:999px;border:1px solid #CFC8BB;background:transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.vtabs button:hover{border-color:#1C1C1A}
+.vtabs button[aria-pressed="true"]{background:#1C1C1A;color:#fff;border-color:#1C1C1A}
+@media (max-width:900px){.vph{height:56vw}}
+.hero .row{flex-wrap:nowrap}
