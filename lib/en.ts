@@ -514,5 +514,11 @@ export const DICT: Record<string, string> = {
 "Widok z kamery na dźwigu na plac budowy budynku B": "The crane camera's view of the building B site",
 "Postęp budowy · Kwartał Zabłocie": "Construction · Kwartał Zabłocie",
 "Patrz, jak rośnie Twoje okno: postęp budynków, kamera na żywo i dziennik budowy miesiąc po miesiącu.": "Watch your window go up: building progress, a live camera and a month-by-month site diary.",
-"Ulubione": "Favourites"
+"Ulubione": "Favourites",
+"Kwartał od ulicy: dawna hala z cegły i trzy nowe budynki z balkonami, lipy przed wejściem": "The quarter from the street: the old brick hall and three new buildings with balconies, lime trees by the entrance",
+"Kwartał od ulicy Lipowej · wizualizacja": "Kwartał from Lipowa Street · visualisation",
+"Budynek A: dawna hala z cegły z łukowymi oknami w czarnych ramach": "Building A: the old brick hall with arched windows in black frames",
+"Budynek B od zielonego dziedzińca, balkony na południe, plac zabaw": "Building B from the green courtyard, south-facing balconies, a playground",
+"Budynek C od Wisły, tarasy z zielenią, bulwary o zachodzie": "Building C from the Vistula, planted terraces, the boulevards at sunset",
+"Budynek D na rogu ulicy, kawalerki z małymi balkonami, stojaki na rowery": "Building D on the street corner, studios with small balconies, bike racks"
 };
